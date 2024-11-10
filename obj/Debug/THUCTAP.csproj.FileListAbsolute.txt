@@ -1,0 +1,2 @@
+C:\Users\Dell\source\repos\THUCTAP\THUCTAP\obj\Debug\THUCTAP.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\THUCTAP\THUCTAP\obj\Debug\THUCTAP.csproj.CoreCompileInputs.cache

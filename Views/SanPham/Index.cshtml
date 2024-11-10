@@ -1,0 +1,36 @@
+﻿@model IEnumerable<THUCTAP.Models.SanPham>
+
+@{
+    ViewBag.Title = "Danh sách sản phẩm";
+}
+
+<h2>Danh sách sản phẩm</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+            <th>Mô tả</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaSP</td>
+                <td>@item.TenSP</td>
+                <td>@item.Gia</td>
+                <td>@item.MoTa</td>
+                <td>
+                    @Html.ActionLink("Sửa", "Edit", new { id = item.MaSP }) |
+                    @Html.ActionLink("Xóa", "Delete", new { id = item.MaSP })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>@Html.ActionLink("Thêm sản phẩm", "Create")</p>
